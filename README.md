@@ -1,6 +1,9 @@
 # Doggo Discord Bot
 A bot that has any kind of utitly. Update over time.
 
+## Demo
+![WeatherReply](https://raw.githubusercontent.com/sirclex/DoggoDiscordBot/main/ImageDemoGit/dogweatherLondon.PNG)
+
 ## Built Using
 + [Discord.js](https://discord.js.org) - Discord API wrapper
 + [GoogleCloud](https://cloud.google.com/text-to-speech) - Provides Text-to-Speech voice
