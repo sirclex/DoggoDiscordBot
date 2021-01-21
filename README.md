@@ -58,5 +58,18 @@ sh startbot.sh
 startbot_win.bat
 ```
 
+## Features & Commands
++ Text to speech on current voice channel
+`bark <text>`
+Example: `bark Hello world`
+
++ Text to speech on bot's current voice channel
+`rbark <text>`
+Example: `rbark Hello from the other side`
+
++ Check weather of a city
+`dog weather <City name>`
+Example: `dog weather London'
+
 ## Author
 + [@sirclex](https://github.com/sirclex)
