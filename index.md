@@ -1,37 +1,90 @@
-## Welcome to GitHub Pages
+# Doggo Discord Bot
+A utility bot use Discord API. Update over time.
 
-You can use the [editor on GitHub](https://github.com/sirclex/DoggoDiscordBot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Demo
+![WeatherReply](https://raw.githubusercontent.com/sirclex/DoggoDiscordBot/main/ImageDemoGit/dogweatherLondon.PNG)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Built Using
++ [Discord.js](https://discord.js.org) - Discord API wrapper
++ [GoogleCloud](https://cloud.google.com/text-to-speech) - Provides Text-to-Speech voice
++ [OpenWeatherMap](https://openweathermap.org) - Provides API for tracking weather
 
-### Markdown
+## Getting Started
+These instructions will get you a copy of the bot up and running on your local machine for development and testing purposes.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Prerequisites
++ [NodeJS](https://nodejs.org) >= 14.0.0
++ NPM >= 6.9.0
++ [Git](https://git-scm.com/)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Installing
+You will need to clone the repo to your machine
+```
+$ git clone https://github.com/sirclex/DoggoDiscordBot.git
+$ cd DoggoDiscordBot
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Install the dependencies
 
-### Jekyll Themes
+```
+$ npm install
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sirclex/DoggoDiscordBot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Edit file config.properties to add OpenWeatherMap API Token and Discord Bot Token.
+```
+OpenWeatherMapToken=
+BotToken=
+```
 
-### Support or Contact
+You also need to register to GoogleCloud to use their API and get a json file after finish.
+Add path to json file to startup file
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+startbot.sh for Ubuntu/Linux
+```
+#!bin/bash
+export GOOGLE_APPLICATION_CREDENTIALS=""
+node bot.js
+```
+
+startbot_win.bat for Windows
+```
+set GOOGLE_APPLICATION_CREDENTIALS=
+node bot.js
+```
+
+After it's installed and configurated, you can start the bot by doing the following
+```
+//On Ubuntu/Linux
+sh startbot.sh
+
+//On Windows
+startbot_win.bat
+```
+
+## Features & Commands
++ Text to speech on current voice channel
+```
+bark <text>
+
+//Example
+bark Hello world
+```
+
++ Text to speech on bot's current voice channel
+```
+rbark <text>
+
+//Example:
+rbark Hello from the other side
+```
+
++ Check weather of a city
+```
+dog weather <City name>
+
+//Example
+dog weather London
+```
+
+## Author
++ [@sirclex](https://github.com/sirclex)
