@@ -1,5 +1,5 @@
 # Doggo Discord Bot
-A bot that has any kind of utitly. Update over time.
+A utility bot use Discord API. Update over time.
 
 ## Demo
 ![WeatherReply](https://raw.githubusercontent.com/sirclex/DoggoDiscordBot/main/ImageDemoGit/dogweatherLondon.PNG)
