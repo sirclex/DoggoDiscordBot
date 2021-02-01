@@ -32,8 +32,11 @@ $ npm install
 
 Edit file config.properties to add OpenWeatherMap API Token and Discord Bot Token.
 ```
-OpenWeatherMapToken=
-BotToken=
+{
+	"prefix": "dog",
+    "BotToken": "",
+    "OpenAPIToken": ""
+}
 ```
 
 You also need to register to GoogleCloud to use their API and get a json file after finish.
@@ -64,26 +67,18 @@ startbot_win.bat
 ## Features & Commands
 + Text to speech on current voice channel
 ```
-bark <text>
+dogbark <text>
 
 //Example
-bark Hello world
-```
-
-+ Text to speech on bot's current voice channel
-```
-rbark <text>
-
-//Example:
-rbark Hello from the other side
+dogbark Hello world
 ```
 
 + Check weather of a city
 ```
-dog weather <City name>
+dogweather <City name>
 
 //Example
-dog weather London
+dogweather London
 ```
 
 ## Author
