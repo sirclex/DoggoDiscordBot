@@ -34,8 +34,8 @@ Edit file config.properties to add OpenWeatherMap API Token and Discord Bot Toke
 ```
 {
 	"prefix": "dog",
-    "BotToken": "",
-    "OpenAPIToken": ""
+    	"BotToken": "",
+    	"OpenAPIToken": ""
 }
 ```
 
